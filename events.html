@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events - College Event Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="images/logo.png" alt="College Logo" class="logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2 class="page-title">Upcoming College Events</h2>
+    <section class="events-container">
+
+        <div class="event-card">
+            <img src="images/techfest.jpg" alt="Tech Fest">
+            <h3>Tech Fest 2025</h3>
+            <p>Explore innovations and compete in coding, robotics, and tech talks. <br><strong>Date:</strong> June 10, 2025</p>
+            <a href="#">Apply Now</a>
+        </div>
+
+        <div class="event-card">
+            <img src="images/sportsday.jpg" alt="Sports Day">
+            <h3>Annual Sports Meet</h3>
+            <p>Join thrilling competitions including athletics, football, and more. <br><strong>Date:</strong> July 5, 2025</p>
+            <a href="#">Register</a>
+        </div>
+
+        <div class="event-card">
+            <img src="images/cultural.jpg" alt="Cultural Day">
+            <h3>Cultural Day</h3>
+            <p>Showcase your talent in music, dance, drama, and fashion. <br><strong>Date:</strong> August 20, 2025</p>
+            <a href="#">Join Event</a>
+        </div>
+
+        <div class="event-card">
+            <img src="images/workshop.jpg" alt="Workshop">
+            <h3>AI Workshop</h3>
+            <p>Hands-on training in AI/ML by industry experts. <br><strong>Date:</strong> September 15, 2025</p>
+            <a href="#">Sign Up</a>
+        </div>
+<div id="footer-placeholder"></div>
+<script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+</script>
+
+    </section>
+</main>
+
+</body>
+</html>
